@@ -12,6 +12,7 @@ import java.awt.event.ActionEvent;
 import javax.swing.JTextField;
 import javax.swing.JLabel;
 import java.awt.Font;
+import javax.swing.JPasswordField;
 
 
 public class LoginScreen {
@@ -20,9 +21,9 @@ public class LoginScreen {
 	private JTextField enteredUserName;
 	private JLabel userName;
 	private JLabel userPassword;
-	private JTextField enteredPassword;
 	private JButton userLogin;
 	private JLabel lblWelcomeToStock;
+	private JPasswordField passwordField;
 
 	/**
 	 * Launch the application.
@@ -73,11 +74,6 @@ public class LoginScreen {
 		userPassword.setBounds(74, 121, 83, 39);
 		frame.getContentPane().add(userPassword);
 		
-		enteredPassword = new JTextField();
-		enteredPassword.setBounds(153, 126, 176, 30);
-		frame.getContentPane().add(enteredPassword);
-		enteredPassword.setColumns(10);
-		
 		userLogin = new JButton("Login");
 		userLogin.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
@@ -91,6 +87,9 @@ public class LoginScreen {
 		lblWelcomeToStock.setFont(new Font("Times New Roman", Font.PLAIN, 16));
 		lblWelcomeToStock.setBounds(101, 11, 264, 50);
 		frame.getContentPane().add(lblWelcomeToStock);
+		
+		passwordField = new JPasswordField();
+		passwordField.setBounds(153, 126, 176, 30);
+		frame.getContentPane().add(passwordField);
 	}
-	
 	}

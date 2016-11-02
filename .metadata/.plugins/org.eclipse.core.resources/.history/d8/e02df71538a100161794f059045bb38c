@@ -1,0 +1,24 @@
+package gui;
+
+import javax.swing.JFrame;
+import javax.swing.JLabel;
+import javax.swing.SwingConstants;
+import java.awt.Color;
+
+public class MainDashboard extends JFrame {
+	public MainDashboard() {
+		getContentPane().setLayout(null);
+		
+		JLabel nameAndDate = new JLabel("Name, Date");
+		nameAndDate.setForeground(Color.BLUE);
+		nameAndDate.setHorizontalAlignment(SwingConstants.CENTER);
+		nameAndDate.setBounds(347, 11, 70, 14);
+		getContentPane().add(nameAndDate);
+		
+		JLabel moneyAmount = new JLabel("moneyAmount");
+		moneyAmount.setForeground(new Color(50, 205, 50));
+		moneyAmount.setHorizontalAlignment(SwingConstants.CENTER);
+		moneyAmount.setBounds(347, 25, 77, 14);
+		getContentPane().add(moneyAmount);
+	}
+}
